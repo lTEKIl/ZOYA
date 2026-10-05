@@ -1,0 +1,33 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Local secrets and launcher
+zoya.sh
+zoyagroq_api
+.env
+.env.*
+
+# Runtime data
+runs/
+chat_history.json
+
+# Downloads and logs
+groq-logs-*.csv
+*.log
+
+# User-provided icon
+letter-z.png
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store

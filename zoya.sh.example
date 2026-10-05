@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#
+# Copy this to zoya.sh and set your real GROQ_API_KEY.
+#
+#     cp zoya.sh.example zoya.sh
+#     chmod +x zoya.sh
+#     # edit zoya.sh to put your real key
+
+cd "$(dirname "$(readlink -f "$0")")" || exit 1
+source .venv/bin/activate
+
+# Replace with your own key from https://console.groq.com/keys
+export GROQ_API_KEY="gsk_YOUR_KEY_HERE"
+
+python main.py "$@"
